@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Spendless</string>
+    <string name="btAdd">Add</string>
+    <string name="btSettings">Settings</string>
+    <string name="btHistory">History</string>
+    <string name="btHome">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvExp">Total</string>
+    <string name="tvExpValue">0</string>
+    <string name="tvSpend">You are able to spend 0 this month</string>
+    <!-- Add Expenses Fragment -->
+    <string name="editInput">Your last expense</string>
+    <string name="btApply">Apply</string>
+    <string name="currExp">Expenses</string>
+    <!-- Settings Fragment -->
+    <string name="tvSettings">Coming soon…</string>
+    <string name="tvExpWeek">Week</string>
+    <string name="tvExp24h">Last 24h</string>
+    <string name="tvExpLeft">Left</string>
+    <string name="tvHistoryTitle">Here is your cash-expense history</string>
+    <string name="tvHistory">History</string>
+</resources>

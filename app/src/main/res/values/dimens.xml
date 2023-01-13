@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btMain">15sp</dimen>
+    <dimen name="tvMain">20sp</dimen>
+    <dimen name="tvGrey">12sp</dimen>
+    <dimen name="editText">25sp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="btnPadding">12dp</dimen>
+    <dimen name="itemMargin">16dp</dimen>
+
+
+    <dimen name="bigText">24sp</dimen>
+    <dimen name="smallText">16sp</dimen>
+    <dimen name="titleText">36sp</dimen>
+    <dimen name="btnText">20sp</dimen>
+
+    <dimen name="cornerRadius">32dp</dimen>
+</resources>

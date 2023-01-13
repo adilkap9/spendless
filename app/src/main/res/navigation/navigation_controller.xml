@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_controller"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.spendless.presentation.fragments.HomeFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.spendless.presentation.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <dialog
+        android:id="@+id/addExpFragment"
+        android:name="com.example.spendless.presentation.fragments.AddExpFragment"
+        android:label="fragment_add_exp"
+        tools:layout="@layout/fragment_add_exp" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.spendless.presentation.fragments.HistoryFragment"
+        android:label="HistoryFragment" />
+</navigation>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Hello, Adil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Manage your cash expenses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreeting" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTotalExp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="180dp"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_cyan"
+            android:orientation="vertical"
+            android:padding="@dimen/big_padding">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="12dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bank" />
+
+            <TextView
+                android:id="@+id/tvExpValue"
+                style="@style/bigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000" />
+
+
+            <TextView
+                android:id="@+id/tvTotalExp"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvExp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLastWeek"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="36dp"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_purple"
+            android:orientation="vertical"
+            android:padding="@dimen/big_padding">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_balance" />
+
+
+            <TextView
+                android:id="@+id/tvExpValueWeek"
+                style="@style/bigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000" />
+
+            <TextView
+                android:id="@+id/tvExpWeek"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvExpWeek" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLast24h"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:layout_constraintEnd_toEndOf="@+id/cardTotalExp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardTotalExp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_sandy"
+            android:orientation="vertical"
+            android:padding="@dimen/big_padding">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_clock" />
+
+
+            <TextView
+                android:id="@+id/tvExpValue24h"
+                style="@style/bigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000" />
+
+            <TextView
+                android:id="@+id/tvExp24h"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvExp24h" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardExpLeft"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:layout_constraintEnd_toEndOf="@+id/cardLastWeek"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardLastWeek">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_peachy"
+            android:orientation="vertical"
+            android:padding="@dimen/big_padding">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="12dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_creditcard" />
+
+
+            <TextView
+                android:id="@+id/tvExpValueLeft"
+                style="@style/bigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000" />
+
+            <TextView
+                android:id="@+id/tvExpLeft"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvExpLeft" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btAdd"
+        style="@style/btnStyle"
+        android:text="@string/btAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardExpLeft"
+        app:layout_constraintStart_toStartOf="@+id/cardLast24h"
+        app:layout_constraintTop_toBottomOf="@+id/cardExpLeft" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

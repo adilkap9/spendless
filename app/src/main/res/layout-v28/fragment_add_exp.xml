@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:gravity="center"
+    android:paddingTop="@dimen/big_padding"
+    android:orientation="vertical"
+    tools:context=".presentation.fragments.AddExpFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText"
+        style="@style/bigText"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineProvider="background"
+        android:hint="@string/editInput"
+        android:inputType="number" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="24dp"/>
+
+    <Button
+        android:id="@+id/btApply"
+        style="@style/btnStyle"
+        android:text="@string/btApply" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="24dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- id: editText, btApply -->
